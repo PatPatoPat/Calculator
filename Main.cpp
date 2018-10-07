@@ -6,8 +6,8 @@ using namespace std;
 bool isRunning;
 
 enum Langs {PL,EN  };
-string Version = "0.1v";
-Langs selectedLang = EN;
+string Version = "0.2v";
+Langs selectedLang = PL;
 void clear(){
   system("cls");
 }
@@ -86,22 +86,25 @@ void addition(Langs lang){
   clear();
 }
 void substraction(Langs lang){
-    if(lang == EN){
+    clear();
+    if(lang == PL){
         double FNum;
         double SNum;
         cout << "**************************" << '\n';
         cout << "Podaj pierwsza liczbe : ";
         cin >> FNum;
+        cout << "**************************" << '\n';
         cout << "Podaj druga liczbe : ";
         cin >> SNum;
         cout << "**************************" << '\n';
-        cout << FNum << "-" << SNum << FNum - SNum;
-    }else if(lang == PL){
+        cout << FNum << "-" << SNum << "=" << FNum - SNum;
+    }else if(lang == EN){
         double FNum;
         double SNum;
         cout << "**************************" << '\n';
         cout << "Please enter a first number : ";
         cin >> FNum;
+        cout << "**************************" << '\n';
         cout << "Please enter a Second number : ";
         cin >> SNum;
         cout << "**************************" << '\n';
@@ -111,22 +114,25 @@ void substraction(Langs lang){
     clear();
 }
 void multiplication(Langs lang){
-    if(lang == EN){
+    clear();
+    if(lang == PL){
         double FNum;
         double SNum;
         cout << "**************************" << '\n';
         cout << "Podaj pierwsza liczbe : ";
         cin >> FNum;
+        cout << "**************************" << '\n';
         cout << "Podaj druga liczbe : ";
         cin >> SNum;
         cout << "**************************" << '\n';
         cout << FNum << " * " << SNum <<" = "<< FNum * SNum;
-    }else if(lang == PL){
+    }else if(lang == EN){
         double FNum;
         double SNum;
         cout << "**************************" << '\n';
         cout << "Please enter a first number : ";
         cin >> FNum;
+        cout << "**************************" << '\n';
         cout << "Please enter a Second number : ";
         cin >> SNum;
         cout << "**************************" << '\n';
@@ -136,22 +142,25 @@ void multiplication(Langs lang){
     clear();
 }
 void division(Langs lang){
-    if(lang == EN){
+    clear();
+    if(lang == PL){
         double FNum;
         double SNum;
         cout << "**************************" << '\n';
         cout << "Podaj pierwsza liczbe : ";
         cin >> FNum;
+        cout << "**************************" << '\n';
         cout << "Podaj druga liczbe : ";
         cin >> SNum;
         cout << "**************************" << '\n';
         cout << FNum << " / " << SNum <<" = "<< FNum / SNum;
-    }else if(lang == PL){
+    }else if(lang == EN){
         double FNum;
         double SNum;
         cout << "**************************" << '\n';
         cout << "Please enter a first number : ";
         cin >> FNum;
+        cout << "**************************" << '\n';
         cout << "Please enter a Second number : ";
         cin >> SNum;
         cout << "**************************" << '\n';
@@ -161,22 +170,25 @@ void division(Langs lang){
     clear();
 }
 void exponentiation(Langs lang){
-    if(lang == EN){
+    clear();
+    if(lang == PL){
         double FNum;
         double SNum;
         cout << "**************************" << '\n';
         cout << "Podaj pierwsza liczbe : ";
         cin >> FNum;
+        cout << "**************************" << '\n';
         cout << "Podaj druga liczbe : ";
         cin >> SNum;
         cout << "**************************" << '\n';
         cout << FNum << " ^ " << SNum <<" = "<< pow(FNum,SNum);
-    }else if(lang == PL){
+    }else if(lang == EN){
         double FNum;
         double SNum;
         cout << "**************************" << '\n';
         cout << "Please enter a first number : ";
         cin >> FNum;
+        cout << "**************************" << '\n';
         cout << "Please enter a Second number : ";
         cin >> SNum;
         cout << "**************************" << '\n';
